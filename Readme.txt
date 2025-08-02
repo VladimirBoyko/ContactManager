@@ -4,7 +4,7 @@ This is a simple Java-based Contact Manager application.
 
 ** Requirements: 
 
-- Java Development Kit (JDK) 17 or higher
+- Java Development Kit (JDK) 24 or higher
 - Apache Maven
 
 ** How to Build and Run:
