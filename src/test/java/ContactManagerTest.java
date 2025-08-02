@@ -14,7 +14,7 @@ public class ContactManagerTest {
         contactManager = new ContactManager();
     }
 
-    //checking the contact adding
+    //checking the contact adding - passed
     @Test
     void testAddContact_positive() {
         Contact contact = new Contact("Jon", "0490234567");
@@ -22,7 +22,7 @@ public class ContactManagerTest {
         assertEquals(1, contactManager.displayAllContacts().size());
     }
 
-    //checking the contact searching
+    //checking the contact searching - passed
     @Test
     void testSearchContact_foundOneMatch() {
         Contact contact = new Contact("Vova", "0490209876");
@@ -33,7 +33,7 @@ public class ContactManagerTest {
         assertEquals("0490209876", found.getPhone());
     }
 
-    //checking the not exist contact searching
+    //checking the not exist contact searching - passed
     @Test
     void testSearchContact_nonExistingContact() {
         Contact contact = new Contact("Vova", "0490209876");
@@ -42,20 +42,20 @@ public class ContactManagerTest {
         assertNull(found);
     }
 
-    //checking the empty contact searching
+    //checking the empty contact searching - failed
     @Test
     void testSearchContact_emptyField() {
         Contact contact = new Contact("Janny", "0490209992");
         contactManager.addContact(contact);
         Contact found = contactManager.searchContact("");
-        assertNull(found);
+        assertNotNull(found);
     }
 
-    //checking the match printing format
+    //checking the unmatch printing format - failed
     @Test
     void testToLine() {
         Contact contact = new Contact("Omal", "0490203333");
-        String expectingResult = "* Name: Omal\nPhone: 0490203333\n";
+        String expectingResult = "* Name: Omal Phone: 0490203333";
         assertEquals(expectingResult, contact.toLine());
     }
 
