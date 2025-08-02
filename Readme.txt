@@ -13,21 +13,11 @@ This is a simple Java-based Contact Manager application.
    cd ~/path_to_contact_manager 
    for example cd ~/Documents/Subjects_in_uni/DevOps_Tools/assesment_2/contact_manager
 
-//due to assessment requirements, the build will have a FAILED status
-// you might proceed to step 4 for the compiling
 2. Compile and run tests:
    mvn clean test
 
 3. Build the JAR file:
    mvn clean package
-
-   This will create the file:
-   target/contact_manager-1.0-SNAPSHOT.jar
-
-//workaround
-//this command ignore failure unit tests as it required in task instructions  **three test cases pass and two test cases fail**
-4. Build the JAR file:
-mvn clean package -DskipTests
 
    This will create the file:
    target/contact_manager-1.0-SNAPSHOT.jar
