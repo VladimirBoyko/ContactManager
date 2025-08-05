@@ -7,7 +7,7 @@ This is a simple Java-based Contact Manager application.
 - Java Development Kit (JDK) 24 or higher
 - Apache Maven
 
-** How to Build and Run:
+** How to Build and Run:  **
 
 1. Open a terminal and navigate to the project directory:
    cd ~/path_to_contact_manager 
