@@ -42,7 +42,6 @@ To build manually:
 
 Job configuration is located at:
 ~/.jenkins/jobs/DOT503/
-
 ____________________________________________________
 
 ** Monitoring  **
