@@ -55,16 +55,11 @@ https://one.eu.newrelic.com/dashboards/detail/Njk2MzI1NnxWSVp8REFTSEJPQVJEfGRhOj
   - Agent: `newrelic.jar` is added during runtime
 
 To run with monitoring enabled:
-```bash
-java -javaagent:/path/to/newrelic.jar -jar target/contact_manager-1.0-SNAPSHOT.jar
+bash
+java -javaagent:/Users/vladimir/newrelic/newrelic.jar \
+     -jar /Users/vladimir/.jenkins/workspace/DOT503/target/contact_manager-1.0-SNAPSHOT.jar
 
 2) Nagios
-- Nagios Core is configured to monitor:
-   Jenkins service availability
-- Host system CPU and memory usage
-   Java process (Contact Manager) uptime
-- Monitoring tools used:
-   check_http to verify Jenkins web UI
    check_procs to ensure Java app is running
 ____________________________________________________
 Prepared by student Boiko Vladimir A00168917
